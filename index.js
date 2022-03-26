@@ -28,7 +28,7 @@ app.get('/users', function(req, res) {
 app.get('/users/view/:id', function(req, res) {
  var title = 'User Page';
  var id = req.params.id;
- res.render('Users/view', {
+ res.render('users/view', {
      title: title,
      user: data[--id]
  });
